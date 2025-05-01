@@ -73,5 +73,15 @@ To master the art of writing clean, efficient, and professional-grade C++ and Py
 - **Platforms**: AWS, GCP  
 
 ---
+## 🗂️ Structure
 
+Each day includes:
+
+- 🎯 **Focus**: What you’ll master  
+- 📚 **Topics**: Theory + application  
+- 🛠️ **Task**: Real-world implementation  
+- 🧠 **Reflection**: Critical thinking questions  
+- ✅ **Checklist**: Deliverables for the day  
+
+---
 Feel free to suggest additional features or paths. This marathon is constantly evolving to help you become the best version of yourself as an engineer.
