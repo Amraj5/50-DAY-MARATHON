@@ -14,7 +14,7 @@ def analyse(s):
         elif c.isspace():
             spaceCount+=1
         elif c.isalpha():
-            c.lower()
+            c = c.lower()
             vowels ='aeiou'
             if c in vowels:
                 vowelCount+=1
@@ -27,6 +27,7 @@ def analyse(s):
     print(f"Consonants: {consonantCount}")
     print(f"Digits: {digitCount}")
     print(f"Spaces: {spaceCount}")
+    print(f"Puctuation: {punctCount}")
 def main():
     print("How are you doing adventurer?\n")
     print("It is time to know the worth of your words in all five ramifications\n")
