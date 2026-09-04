@@ -1,28 +1,20 @@
 def input_text():
-    """Prompt the user to enter lines. Stop when they enter 'exit' (case‑insensitive)."""
     lines = []
     while True:
         line = input("Enter a line (or 'exit' to finish): ")
         if line.strip().lower() == "exit":
             break
-        # If the user enters an empty line, we still accept it (it's a line with nothing)
-        # but we can optionally warn; we'll just accept it.
         lines.append(line)
-    # Join with newlines so we preserve line boundaries
+    # Joining  with newlines so line boundaries can be preserved
     return "\n".join(lines)
 
 def main():
     text = input_text()
-    # If nothing was entered, we still have an empty string.
-    
-    # Count lines: number of newlines + 1 if text is non‑empty, else 0
     if text == "":
         lines = 0
     else:
-        lines = text.count('\n') + 1
+        lines = text.count('\n') + 1 #chose this because the same logic was what I used in the c++ version
     
-    # Split into words (by whitespace) – this discards newlines and multiple spaces,
-    # but that's what the original C++ version did.
     words = text.split()
     wordcount = len(words)
     
