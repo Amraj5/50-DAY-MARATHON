@@ -2,7 +2,6 @@
 #include <cctype>
 #include <string>
 
-// Function declarations (signatures unchanged except line is now a reference)
 void typist(std::string& line, bool& keepTyping, char& typed);
 void analyzer(const std::string& line, int& numberOfWords, int& numberOfLines,
               int& spaces, std::string& longestWord, int& numberOfDigits);
@@ -67,10 +66,8 @@ void analyzer(const std::string& line, int& numberOfWords, int& numberOfLines,
     std::string currentWord;
 
     for (char c : line) {
-        // Count lines
         if (c == '\n') {
             ++numberOfLines;
-            // End of a word if we were inside one
             if (inWord) {
                 if (currentWord.length() > longestWord.length())
                     longestWord = currentWord;
